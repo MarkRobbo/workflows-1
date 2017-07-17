@@ -132,7 +132,12 @@ outputs:
     - "http://edamontology.org/format_3475" # tsv
     label: "RPKM table file"
     doc: "Calculated rpkm values"  # To display csv/tsv file as a table
+    
 
+steps:
+  test:
+    label: "hello"
+    
 $namespaces:
   s: http://schema.org/
 
