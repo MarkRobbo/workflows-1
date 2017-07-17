@@ -94,42 +94,36 @@ outputs:
     format: "http://edamontology.org/format_3006"
     label: "BigWig file"
     doc: "Generated BigWig file"
-    outputSource: bam_to_bigwig/outfile
 
   star_reads_alignment_log:
     type: File
     format: "http://edamontology.org/format_2330"
     label: "STAR alignment log"
     doc: "STAR alignment log file"
-    outputSource: star_reads_alignment/alignedLog
 
   fastx_quality_stats_upstream_statistics:
     type: File
     format: "http://edamontology.org/format_2330"
     label: "fastx_quality_stats upstream FASTQ file statistics"
     doc: "Fastx statistics file for upstream FASTQ file"
-    outputSource: fastx_quality_stats_upstream/statistics
 
   fastx_quality_stats_downstream_statistics:
     type: File
     format: "http://edamontology.org/format_2330"
     label: "fastx_quality_stats downstream FASTQ file statistics"
     doc: "Fastx statistics file for downstream FASTQ file"
-    outputSource: fastx_quality_stats_downstream/statistics
 
   bambai_pair:
     type: File
     format: "http://edamontology.org/format_2572"
     label: "Coordinate sorted BAM alignment file (+index BAI)"
     doc: "Coordinate sorted BAM file and BAI index file"
-    outputSource: samtools_sort_index/bam_bai_pair
 
   bowtie_reads_alignment_log:
     type: File
     format: "http://edamontology.org/format_2330"
     label: "Bowtie alignment log"
     doc: "Bowtie alignment log file"  # To display plain text
-    outputSource: bowtie_reads_alignment/output_bowtie_log
 
   rpkm_calculation_table:
     type: File
@@ -138,7 +132,6 @@ outputs:
     - "http://edamontology.org/format_3475" # tsv
     label: "RPKM table file"
     doc: "Calculated rpkm values"  # To display csv/tsv file as a table
-    outputSource: rpkm_calculation/rpkmFile
 
 $namespaces:
   s: http://schema.org/
